@@ -5,8 +5,8 @@ export default {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+      backgroundImage: {
+        "gradient-linear": "linear-gradient(to left top, #131313 20%, #282828 60%, #131313 100%)"
       },
     },
   },

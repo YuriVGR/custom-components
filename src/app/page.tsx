@@ -1,33 +1,33 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {} from "@fortawesome/pro-solid-svg-icons";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
+    <main className="flex min-h-screen flex-col items-center justify-center gap-5 bg-gradient-to-b text-white">
+      <div className="container flex flex-col items-center gap-8">
+        <h1 className="text-5xl font-semibold sm:text-7xl select-none">
+          ur/<span className="font-black bg-gradient-to-b from-purple-600 to-purple-900 bg-clip-text text-transparent">UI</span>
         </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
           <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
+            href="/library"
+            className="flex max-w-xs flex-col gap-2 rounded-lg bg-zinc-500/40 p-4 transition-all hover:scale-105 hover:bg-purple-500/40"
           >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
+            <h3 className="text-2xl font-semibold">Library</h3>
             <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
+              Access to my library - Everything Component on this pack, either
+              install or copy/paste
             </div>
           </Link>
           <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
+            href="/docs"
+            className="flex max-w-xs flex-col gap-2 rounded-lg bg-zinc-500/40 p-4 transition-all hover:scale-105 hover:bg-purple-500/40"
           >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
+            <h3 className="text-2xl font-semibold">Docs</h3>
             <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
+              Documentation - Everything you need to know to set up your
+              project and components.
             </div>
           </Link>
         </div>
